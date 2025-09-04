@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ChevronDown, Mail, CheckCircle, Download } from "lucide-react";
+import { Mail, CheckCircle, Download } from "lucide-react";
 import "./index.css";
 
 function App() {
@@ -18,12 +18,6 @@ function App() {
       setIsSubmitting(false);
       setEmail("");
     }, 1000);
-  };
-
-  const scrollToNewsletter = () => {
-    document.getElementById("newsletter")?.scrollIntoView({
-      behavior: "smooth",
-    });
   };
 
   return (
